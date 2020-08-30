@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12 center">
+      <h3 class="titulo">Tienda "Don diego"</h3>
+    </div>  
+  </div>
+  <div class="row">
+    <div class="col s3 center">
+      <h5 class="parrafo">Datos cliente</h5>
+      <div class="input-field">
+        <input id="nombrec" type="text" class="validate">
+        <label for="nombrec">Nombre cliente</label>
+      </div>
+      <div class="input-field">
+        <input id="duic" type="number" class="validate" pattern="[0-9]{8}-[0-9]{1}">
+        <label for="duic">DUI cliente</label>
+      </div>
+      <div class="input-field">
+        <input id="visit" type="number" class="validate">
+        <label for="visit">Visita Nº</label>
+      </div>
+    </div>
+    <div class="col s3 center">
+      <h5 class="parrafo">Productos</h5>
+      <div class="input-field">
+        <select id="combo" onchange="mFunction()">
+          <option value="0" disabled selected>Producto</option>
+          <option [value]="item" *ngFor="let item of lista">{{item}}</option>
+        </select>
+      </div>
+      <p class="letra1">Código Producto</p>
+      <p id="cpro" class="letra1"></p>
+      <p class="letra1">Precio Producto</p>
+      <p id="ppro" class="letra1"></p>
+      <input id="ppro2" type="number" [hidden]="contador2 == 0">
+      <a class="waves-effect waves-light btn" (click)="aviso()">Agregar a canasta</a>
+    </div>
+    <div class="col s6 center" [hidden]="contador == 0">
+      <h5 class="parrafo">Productos de {{name}}</h5>
+      <table class="responsive-table centered striped blue lighten-4" id="GG">
+        <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Descuento</th>
+        </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let temployed of empleados">
+            <td>{{temployed.producto}}</td>
+            <td>${{temployed.precio}}</td>
+            <td>{{temployed.descuento}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h5 class="letra1">Total a pagar: ${{endo}}</h5>
+      <br>
+      <a class="waves-effect waves-light btn" (click)="captureScreen()">Completar compra</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+@font-face { 
+	font-family: 'Poiret One'; 
+	font-style: cursive; 
+	font-weight: normal; 
+	src: url(/assets/ttf/PoiretOne-Regular.ttf) format("truetype"); 
+}
+
+@font-face { 
+	font-family: 'Open Sans'; 
+	font-style: sans-serif; 
+	font-weight: normal; 
+	src: url(/assets/ttf/OpenSans-Semibold.ttf) format("truetype"); 
+}
+
+@font-face { 
+	font-family: 'Pacifico'; 
+	font-style: cursive; 
+	font-weight: normal; 
+	src: url(/assets/ttf/Pacifico.ttf) format("truetype"); 
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.letra1{
+	font-family: 'Poiret One', cursive;
+	font-size: 22px;
+}
+
+.titulo{
+	font-family: 'Pacifico', cursive;
+	font-size: 80px;
+}
+
+.parrafo{
+	font-family: 'Pacifico', cursive;
+	font-size: 22px;
+}
+
+.borde
+{
+	margin-top: 20px;
+	border-radius: 5px;
+}
+
+.textonav
+{
+	font-style: bold;
+	font-size: 20px;
+}
+
+.borde
+{
+	border-radius: 5px;
+}
+
+.espaciorow
+{
+	margin-top: -20px;
+}
+
+.espaciotop
+{
+	margin-top: 20px;
+}

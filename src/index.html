@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Practico01</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+</head>
+<body>
+  <app-root></app-root>
+  <script>
+    $(document).ready(function(){
+      $('select').formSelect();
+    });
+
+    function mFunction() {
+      var x = document.getElementById("combo").value;
+      if (x == "Soda 1.25 L")
+      {
+        document.getElementById("cpro").innerHTML = "P01";
+        document.getElementById("ppro").innerHTML = "$1.25";
+        document.getElementById("ppro2").value = "1.25";
+      }else if (x == "Lata con atún")
+      {
+        document.getElementById("cpro").innerHTML = "P02";
+        document.getElementById("ppro").innerHTML = "$1.50";
+        document.getElementById("ppro2").value = "1.50";
+      }else if (x == "Botella con agua")
+      {
+        document.getElementById("cpro").innerHTML = "P03";
+        document.getElementById("ppro").innerHTML = "$1.00";
+        document.getElementById("ppro2").value = "1.00";
+      }else if (x == "Cartón de huevos")
+      {
+        document.getElementById("cpro").innerHTML = "P04";
+        document.getElementById("ppro").innerHTML = "$3.25";
+        document.getElementById("ppro2").value = "3.25";
+      }else if (x == "Botella de vino")
+      {
+        document.getElementById("cpro").innerHTML = "P05";
+        document.getElementById("ppro").innerHTML = "$5.00";
+        document.getElementById("ppro2").value = "5.00";
+      }
+    }
+  </script>
+</body>
+</html>
